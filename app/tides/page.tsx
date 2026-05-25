@@ -4,14 +4,14 @@ import { TidesCanvas, TidesProps } from "../components/AI generated/tides";
 import ShaderController, { ControlDef } from "../controller";
 
 const initialValues: Required<TidesProps> = {
-  speed: 0.3,
-  scale: 3.0,
-  distortion: 1.5,
-  frequency: 1.0,
-  complexity: 2.0,
-  foam: 1.0,
-  colorShift: 0.0,
-  brightness: 1.2,
+  speed: 0.220,
+  scale: 1.4,
+  frequency: 0.6,
+  complexity: 1.1,
+  distortion: 0.7,
+  foam: 1.1,
+  colorShift: -0.050,
+  brightness: 1.3,
   mouseForce: 1.5,
   resolutionScale: 1.0,
 };

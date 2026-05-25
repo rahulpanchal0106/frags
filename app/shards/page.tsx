@@ -3,13 +3,13 @@ import ShaderController, { ControlDef } from "../controller";
 import { ShardsCanvas, ShardsProps } from "../components/shards";
 
 const initialValues: Required<ShardsProps> = {
-  speed: 1.0,
-  scale: 1.5,
-  complexity: 4.0,
-  colorShift: 0.1,
-  borderWidth: 0.08,
+  speed: 0.1,
+  scale: 0.5,
+  complexity: 4.1,
+  colorShift: 0.2,
+  borderWidth: 0.01,
   brightness: 1.2,
-  mouseForce: 1.5,
+  mouseForce: 1.0,
   resolutionScale: 1.0,
 };
 
@@ -274,7 +274,6 @@ export default function ShardsWorkspace() {
   return (
     <ShaderController<ShardsProps>
       title="Vibrant Shards"
-      componentName="ShardsCanvas"
       initialValues={initialValues}
       controls={shardsControls}
       renderShader={(params) => <ShardsCanvas {...params} />}

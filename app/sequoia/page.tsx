@@ -6,13 +6,13 @@ import {
 } from "../components/AI generated/sequoia";
 
 const initialValues: Required<SequoiaProps> = {
-  speed: 0.15,
-  scale: 1.0,
-  perspective: 0.8,
-  distortion: 1.2,
-  colorShift: 0.2,
-  glassOpacity: 0.85,
-  brightness: 1.2,
+  speed: 0.625,
+  scale: 2.1,
+  perspective: 0.750,
+  distortion: 1.5,
+  glassOpacity: 1.0,
+  colorShift: 0.3,
+  brightness: 1.3,
   mouseForce: 1.5,
   resolutionScale: 1.0,
 };

@@ -7,14 +7,14 @@ import {
 import ShaderController, { ControlDef } from "../controller";
 
 const initialValues: Required<CrosspointProps> = {
-  speed: 0.5,
-  scale: 2.0,
-  complexity: 5.0,
+  speed: 0.2,
+  scale: 4.6,
+  complexity: 2.0,
   warp: 0.4,
-  colorShift: 0.15,
-  borderWidth: 0.05,
-  brightness: 1.1,
-  mouseForce: 1.5,
+  colorShift: 0.750,
+  borderWidth: 0.00,
+  brightness: 1.150,
+  mouseForce: 0.80,
   resolutionScale: 1.0,
 };
 
@@ -290,7 +290,6 @@ export default function CrosspointWorkspace() {
   return (
     <ShaderController<CrosspointProps>
       title="Crosspoint Waves Controller"
-      componentName="CrosspointCanvas"
       initialValues={initialValues}
       controls={crosspointControls}
       renderShader={(params) => <CrosspointCanvas {...params} />}

@@ -6,12 +6,12 @@ import {
 import ShaderController, { ControlDef } from "../controller";
 
 const initialValues: Required<BloomingProps> = {
-  scale: 1.5,
-  size: 1.8,
+  scale: 1.2,
+  size: 0.8,
   petals: 5.0,
-  layers: 15.0,
-  ruffle: 0.8,
-  veins: 0.6,
+  layers: 13.0,
+  ruffle: 1.2,
+  veins: 0.0,
   shadows: 1.0,
   bloomSpeed: 0.5,
   resolutionScale: 1.0,

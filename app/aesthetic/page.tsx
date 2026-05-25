@@ -6,14 +6,14 @@ import {
 import ShaderController, { ControlDef } from "../controller";
 
 const initialValues: Required<AestheticProps> = {
-  scale: 1.5,
-  size: 1.8,
-  petals: 5.0,
-  layers: 10.0,
-  ruffle: 0.8,
-  veins: 0.6,
+  scale: 2.900,
+  size: 1.100,
+  petals: 7.0,
+  layers: 7.0,
+  ruffle: 0.400,
+  veins: 0.0,
   shadows: 0.8,
-  sway: 0.5,
+  sway: 1.0,
   resolutionScale: 1.0,
 };
 

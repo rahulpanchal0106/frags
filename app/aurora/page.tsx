@@ -3,12 +3,12 @@ import { AuroraCanvas, AuroraProps } from "../components/AI generated/aurora";
 import ShaderController, { ControlDef } from "../controller";
 
 const initialValues: Required<AuroraProps> = {
-  speed: 0.15,
-  zoom: 1.5,
-  colorShift: 0.0,
-  grain: 0.5,
-  mouseGlow: 0.8,
-  resolutionScale: 0.5,
+  speed: 0.385,
+  zoom: 1.200,
+  colorShift: 32.0,
+  grain: 0.2,
+  mouseGlow: 0.9,
+  resolutionScale: 0.6,
 };
 
 const auroraControls: ControlDef<AuroraProps>[] = [

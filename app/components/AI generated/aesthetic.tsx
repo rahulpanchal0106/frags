@@ -173,7 +173,7 @@ const DEFAULT_PARAMS: Required<AestheticProps> = {
   resolutionScale: 1.0,
 };
 
-export function AestheticCanvas(props: AestheticProps) {
+export function AestheticCanvas(props= DEFAULT_PARAMS) {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 

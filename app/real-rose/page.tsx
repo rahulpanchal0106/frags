@@ -6,12 +6,12 @@ import {
 import ShaderController, { ControlDef } from "../controller";
 
 const initialValues: Required<RealRoseProps> = {
-  scale: 1.2,
-  size: 2.2,
-  bloomSpeed: 0.6,
-  ruffle: 1.0,
-  shadows: 1.0,
-  resolutionScale: 1.0,
+  scale: 2.50,
+  size: 2.3,
+  bloomSpeed: 0.5,
+  ruffle: 1.7,
+  shadows: 0.8,
+  resolutionScale: 0.7,
 };
 
 const realRoseControls: ControlDef<RealRoseProps>[] = [

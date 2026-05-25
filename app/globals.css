@@ -1,15 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  /* 1. Map your custom fonts here */
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-heading); /* Change to --font-serif or --font-space depending on what you picked */
+  --font-mono: var(--font-mono);
+
+  /* 2. Map your theme colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +26,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }

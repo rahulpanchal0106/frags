@@ -6,12 +6,12 @@ import {
 } from "../components/AI generated/vibrant";
 
 const initialValues: Required<VibrantWavesProps> = {
-  speed: 0.6,
-  scale: 4.0,
-  complexity: 2.5,
-  colorShift: 0.2,
-  distortion: 1.2,
-  borderWidth: 0.15,
+  speed: -0.2,
+  scale: 1.3,
+  complexity: 1.5,
+  colorShift: 3.80,
+  distortion: 0.2,
+  borderWidth: 0.010,
   mouseForce: 1.5,
   resolutionScale: 1.0,
 };

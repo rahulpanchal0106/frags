@@ -6,13 +6,13 @@ import {
 import ShaderController, { ControlDef } from "../controller";
 
 const initialValues: Required<HolographicProps> = {
-  speed: 0.15,
-  scale: 1.5,
-  complexity: 2.0,
-  distortion: 1.2,
-  iridescence: 1.5,
-  darkness: 0.8,
-  mouseForce: 1.5,
+  speed: 0.040,
+  scale: 1.1,
+  complexity: 1.9,
+  distortion: 0.7,
+  iridescence: 0.3,
+  darkness: 0.55,
+  mouseForce: 1.4,
   resolutionScale: 0.5,
 };
 

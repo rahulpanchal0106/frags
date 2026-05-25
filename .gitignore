@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/public/frags-gifs
+/public/frags-static
+# Add this to your .gitignore
+public/images/
+*.gif
+*.jpg
