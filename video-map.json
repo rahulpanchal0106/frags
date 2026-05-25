@@ -1,0 +1,53 @@
+{
+  "aesthetic": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779674555/frags/videos/aesthetic.webm"
+  },
+  "aurora": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779674575/frags/videos/aurora.webm"
+  },
+  "blooming": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779674611/frags/videos/blooming.webm"
+  },
+  "cosmic": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779674662/frags/videos/cosmic.webm"
+  },
+  "crosspoint": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779674685/frags/videos/crosspoint.webm"
+  },
+  "darkweil": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779674789/frags/videos/darkweil.webm"
+  },
+  "holographic": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779674813/frags/videos/holographic.webm"
+  },
+  "lotus": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779674842/frags/videos/lotus.webm"
+  },
+  "macos": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779674864/frags/videos/macos.webm"
+  },
+  "ocean": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779674873/frags/videos/ocean.webm"
+  },
+  "organic-flower": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779674910/frags/videos/organic-flower.webm"
+  },
+  "real-rose": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779674945/frags/videos/real-rose.webm"
+  },
+  "sequoia": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779674974/frags/videos/sequoia.webm"
+  },
+  "shards": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779674997/frags/videos/shards.webm"
+  },
+  "sleepy": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779675000/frags/videos/sleepy.webm"
+  },
+  "tides": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779675118/frags/videos/tides.webm"
+  },
+  "vibrant": {
+    "webm": "https://res.cloudinary.com/dqpwlqgck/video/upload/v1779675163/frags/videos/vibrant.webm"
+  }
+}

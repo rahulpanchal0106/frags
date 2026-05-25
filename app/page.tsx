@@ -68,7 +68,6 @@ const SHADERS = [
 const CATEGORIES = ["All", "Abstract", "Materials", "Botanical", "Ambient"];
 
 // --- CARD COMPONENT ---
-// Added the `isActive` prop so the card knows if it's currently the background
 function ShaderCard({ shader, isActive, onSelect, onSetBg }: { shader: any; isActive: boolean; onSelect: () => void; onSetBg: (id: string) => void }) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -86,10 +85,21 @@ function ShaderCard({ shader, isActive, onSelect, onSetBg }: { shader: any; isAc
         title={isActive ? "Remove Live Background" : "Set as Live Background"}
         className="h-60 relative bg-zinc-950 overflow-hidden border-b border-zinc-800/60 flex items-center justify-center cursor-pointer"
       >
+        {/* Fallback Image */}
         <Image src={`/frags-static/${shader.id}.jpg`} alt={shader.name} fill className="object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
         
+        {/* NEW: Replaced GIF Image tag with HTML5 Video tag */}
         {isHovered && (
-          <Image src={`/frags-gifs/${shader.id}.gif`} alt={shader.name} fill unoptimized className="object-cover absolute inset-0 z-20 scale-105 animate-in fade-in duration-300" /> 
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="object-cover absolute inset-0 z-20 scale-105 animate-in fade-in duration-300"
+          >
+            {/* Only request the blazing fast WebM */}
+            <source src={`https://res.cloudinary.com/dqpwlqgck/video/upload/v1/frags/videos/${shader.id}.webm`} type="video/webm" />
+          </video>
         )}
         
         {/* Floating Action Menu (Appears on Hover) */}
@@ -103,12 +113,10 @@ function ShaderCard({ shader, isActive, onSelect, onSetBg }: { shader: any; isAc
               title={isActive ? "Remove Live Background" : "Live Preview"}
             >
               {isActive ? (
-                // Eye Off SVG (Active State)
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
                   <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" y1="2" x2="22" y2="22"/>
                 </svg>
               ) : (
-                // Regular Eye SVG (Inactive State)
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
                   <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
                   <circle cx="12" cy="12" r="3"/>
@@ -166,13 +174,10 @@ export default function Home() {
     document.body.style.overflow = previewShader ? "hidden" : "auto";
   }, [previewShader]);
 
-  // Handle the logic for toggling the background and scrolling to the top
   const handleToggleBg = (id: string) => {
     if (activeBg === id) {
-      // If clicking the active one, turn it off
       setActiveBg(null);
     } else {
-      // If clicking a new one, turn it on and scroll up
       setActiveBg(id);
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
@@ -217,10 +222,6 @@ export default function Home() {
               Browse Components
             </a>
           )}
-          
-          {/* <a href="https://github.com/rahulpanchal0106/frags" target="_blank" rel="noreferrer" className="px-8 py-3 rounded-full bg-zinc-900/80 border border-zinc-800 hover:border-zinc-600 transition-colors backdrop-blur-sm text-zinc-300 font-medium">
-            Star on GitHub
-          </a> */}
         </div>
 
         {/* Subtle Dependency Note */}
@@ -284,7 +285,17 @@ export default function Home() {
             </div>
 
             <div className="relative w-full h-[50vh] sm:h-[65vh] bg-black">
-              <Image src={`/frags-gifs/${previewShader.id}.gif`} alt={previewShader.name} fill unoptimized className="object-cover" />
+              {/* NEW: Replaced GIF Image tag with HTML5 Video tag in the Modal */}
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                className="object-cover w-full h-full"
+              >
+                <source src={`/frags-videos/${previewShader.id}.webm`} type="video/webm" />
+                <source src={`/frags-videos/${previewShader.id}.mp4`} type="video/mp4" />
+              </video>
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-90" />
             </div>
 
